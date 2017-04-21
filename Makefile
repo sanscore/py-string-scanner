@@ -6,7 +6,7 @@ build: sdist wheel
 
 .PHONY: sdist
 sdist:
-	python setup.py sdist
+	PYTHONDONTWRITEBYTECODE= python setup.py sdist
 
 .PHONY: wheel
 wheel:
